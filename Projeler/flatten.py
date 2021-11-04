@@ -2,7 +2,6 @@ def flattenListe(liste):
     flatListe = liste
     düzListe = []
 
-
     for i in flatListe:
         if type(i) == int or type(i) == float or type(i) == str:
             düzListe.append(i)
@@ -14,17 +13,10 @@ def flattenListe(liste):
                     for b in a:
                         if type(b) == int or type(b) == float or type(b) == str:
                             düzListe.append(b)
-                            
-
-
-
 
     print(düzListe)
 
 
-
-
-
-input = [[1,'a',['cat'],2],[[[3]],'dog'],4,5]
+input = [[1, 'a', ['cat'], 2], [[[3]], 'dog'], 4, 5]
 
 flattenListe(input)
